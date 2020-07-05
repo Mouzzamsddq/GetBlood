@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/donor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+         android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signInViaPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:background="@drawable/custombutton"
+            android:drawableRight="@drawable/ic_phone_red_icon"
+            android:text="Sign in via phone   "
+            android:textAllCaps="false"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textColor="@color/colorBlood"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/signInViaEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/custombutton"
+            android:drawableRight="@drawable/ic_phone_red_icon"
+            android:text="Sign in via email   "
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlood"
+            android:textSize="22sp" />
+
+       <View
+           android:layout_marginTop="20dp"
+           android:layout_width="match_parent"
+           android:layout_height="4dp"
+           android:background="@color/colorBlack"/>
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:layout_height="wrap_content"
+            android:background="#DD3526"
+            android:drawableLeft="@drawable/common_google_signin_btn_icon_dark_focused"
+            android:text="  Sign in with google"
+            android:textColor="@color/colorWhite"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/signInWithFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center"
+            android:background="@color/com_facebook_blue"
+            android:drawableLeft="@drawable/ic_icons8_facebook"
+            android:onClick="facebookLogin"
+            android:text="  Sign in with facebook"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/signOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Out"
+            android:textSize="20sp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAllCaps="false"
+            android:visibility="invisible"
+            android:background="@drawable/custombutton"
+            android:textColor="@color/colorBlood"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+          />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:src="@drawable/getblood"
+        android:layout_alignParentRight="true"
+        android:padding="10dp"/>
+</RelativeLayout>

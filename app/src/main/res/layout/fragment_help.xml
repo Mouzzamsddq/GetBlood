@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/frameHelp"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.HelpFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:background="@color/colorBlood"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/blooddonation"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="About Get Blood "
+                android:gravity="center"
+                android:drawableEnd="@drawable/hearts"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/colorBlood"
+                android:background="@drawable/custombutton"
+                android:drawableRight="@drawable/hearts" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/boarder"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:padding="10dp"
+                android:text="As You already know that the purpose of making this app to  do  a revolution the smart blood donation system. When our relatives or anybody in the critical situation and they need blood, and we are unable to go one by one in the blood bank and get th blood, so I made the app to make a blood donation system very fast and this app is very helpful to save the life of the needy person. \n In this app, you can post your blood request, messaging with that person and sharing images location and also see his/her profile picture. \n\n
+               Thank you so much for using this app."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custombutton"
+                android:text="About me"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorBlood"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableEnd="@drawable/hearts"
+                android:padding="10dp"
+                android:textSize="18sp"
+                android:drawableRight="@drawable/hearts" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boarder"
+                android:padding="5dp">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:background="@drawable/boarder"
+                android:padding="10dp"
+                android:text="My name is Mouzzam Siddiqui.This is my first project in android developing. This is my college project but I tried to give this app a professional look. I hope that this application will help you to find the blood. \n\n        I hope you like my application.Thank you so much for using my application."/>
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/myImageView"
+                    android:layout_marginLeft="15dp"/>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Contact and Support"
+                android:background="@drawable/custombutton"
+                android:textColor="@color/colorBlood"
+                android:layout_gravity="center"
+                android:drawableEnd="@drawable/hearts"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:drawableRight="@drawable/hearts" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/boarder"
+                android:padding="10dp"
+                android:textIsSelectable="true"
+                android:textColorHighlight="@color/colorBlack"
+                android:text="If you find any difficulty and facing any problem regarding this application, feel free to contact me on this mail or mobile no.\n \n1)    8178094410\n2)    Mohazzamsddq07333@gmail.com\n3)    mouzzamsiddiqui.scsebtech@galgotiasuniversity.edu.in"/>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+</FrameLayout>

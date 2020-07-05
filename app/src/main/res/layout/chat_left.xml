@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/messageLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/profileImageView"
+        app:civ_border_color="@null"
+        android:src="@drawable/ic_face_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/messageTextView"
+        android:layout_weight="1"
+        android:textSize="16sp"
+        android:textIsSelectable="true"
+        android:textColorHighlight="@color/colorWhite"
+        android:visibility="gone"
+        android:textColor="@color/colorBlack"
+        android:padding="15dp"
+        android:text="His Message"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/pdfRelativeLayout"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pdf"
+                android:padding="10dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:id="@+id/pdfImageView"
+                android:background="@drawable/bg_receiver"/>
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="pdf file name"
+                android:layout_below="@+id/pdfImageView"
+                android:padding="10dp"
+                android:layout_alignStart="@id/pdfImageView"
+                android:id="@+id/pdfNameTextView"
+                android:background="@color/colorWhite"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlood"
+                android:drawableRight="@drawable/ic_pdf_red_icon"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:id="@+id/messageIv"
+            android:adjustViewBounds="true"
+            android:padding="15dp"
+            android:src="@drawable/ic_image_chat"
+            android:scaleType="fitCenter"
+            android:background="@drawable/bg_receiver"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTextView"
+            android:textColor='@color/colorBlack'
+            android:text="02/03/2019 05:59 PM"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/isSeenTextView"
+        android:gravity="end"
+        android:visibility="gone"
+        android:textAlignment="textEnd"
+        android:text="delivered"/>
+
+
+</LinearLayout>

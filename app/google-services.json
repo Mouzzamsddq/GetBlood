@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1013357346308",
+    "firebase_url": "https://get-blood-f8318.firebaseio.com",
+    "project_id": "get-blood-f8318",
+    "storage_bucket": "get-blood-f8318.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1013357346308:android:22c4efbadd35b16a01bf51",
+        "android_client_info": {
+          "package_name": "com.example.getblood"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1013357346308-56qsc4hnhoagvcviqpiqatf9e0ao298e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.getblood",
+            "certificate_hash": "69474aa90cac3c7a046effdc915fbc211da1552c"
+          }
+        },
+        {
+          "client_id": "1013357346308-o293lbs6emnsu9e979eedqhvatandc5m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdU6l2CaKHD6DXoprRI7hBkDPIJ_MsKfQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1013357346308-o293lbs6emnsu9e979eedqhvatandc5m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

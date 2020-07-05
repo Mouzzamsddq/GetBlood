@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Get Blood</string>
+    <string name="facebook_app_id">2599906990291113</string>
+    <string name="fb_login_protocol_scheme">fb2599906990291113</string>
+    <string name="title_activity_name">NameActivity</string>
+    <string name="title_activity_date_of_birth">DateOfBirth</string>
+    <string name="title_activity_gender">GenderActivity</string>
+    <string name="title_activity_communication_details">CommunicationDetails</string>
+    <string name="atriskred"><font color='#cc0029'>*</font></string>
+    <string name="title_activity_log_in_option">LogInOption</string>
+    <string name="title_activity_options">Options</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="dialog_permission_title">Grant Permissions</string>
+    <string name="dialog_permission_message">This app needs permission to use this feature. You can grant them in app settings.</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="toast_image_intent_null">Image picker option is missing!</string>
+    <string name="msg_error_unable_select_profile_pic">Unable to set profile image. Please try again!</string>
+    <string name="lbl_set_profile_photo">Set profile image</string>
+    <string name="lbl_take_camera_picture">Take a picture</string>
+    <string name="lbl_choose_from_gallery">Choose from gallery</string>
+
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_upload_photo">upload_photo</string>
+    <string name="title_activity_password">Password</string>
+    <string name="title_activity_login_password">login_password</string>
+    <string name="title_activity_upload_profile">upload_profile</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_select_blood">SelectBlood</string>
+    <!-- Strings used for fragments for navigation -->
+    <array name="Blood_Group">
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+        <item>O+</item>
+        <item>O-</item>
+    </array>
+    <array name="userType">
+        <item>Donor</item>
+        <item>Recipient</item>
+    </array>
+    <array name="RequestType">
+        <item>want to donate</item>
+        <item>need blood</item>
+    </array>
+    <string name="title_activity_o_t_p">OTPActivity</string>
+    <string name="title_activity_forgot_password">ForgotPassword</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_home2">Home2Activity</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_address">AddressActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_specifi_profile">SpecifiProfile</string>
+    <string name="title_activity_profile_image">ProfileImage</string>
+    <string name="title_activity_post">PostActivity</string>
+    <string name="title_activity_post_detail">PostDetailActivity</string>
+    <string name="title_activity_setting1">SettingActivity1</string>
+    <string name="title_activity_likes_activitty">LikesActivitty</string>
+    <string name="title_activity_notification">NotificationActivity</string>
+    <string name="eligibility_">Eligibility Requirements</string>
+    <string name="female_">If you are female, you must:\n Be healthy and feeling well\nBe at least 17 years old in most states\nBe at least 5 ft 5 inch\nWeigh at least 150 lbs.</string>
+    <string name="male_">If you are male, you must:\nBe healthy and feeling well\nBe at least 17 years old in most states\nBe at least 5 ft 1 inch \nWeigh at least 130 lbs.\n</string>
+    <string name="info_">Giving blood saves lives. The blood you give is a lifeline in an emergency and for people who need long-term treatments. Many people would not be alive today if donors had not generously given their blood. \n\nWhy we need you to give blood?\n\n We need over 6000 blood donations every day to treat patients in need for people to give blood.\n\nEach year we need approximately 200000 new donors, as some donors can no longer give blood.Most people between ages of 17-65 are able to give blood. Around half our current donors are over 45.That is why we need more young people to start giving blood.</string>
+    <string name="api_key">AIzaSyB1SZVUsF5sIVePnbHIuW1DzqftRPYTKTE</string>
+    <string name="title_activity_google_fill">GoogleFillActivity</string>
+
+
+</resources>

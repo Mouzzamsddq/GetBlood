@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/donor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.ContiueFacebook"
+    tools:showIn="@layout/activity_contiue_facebook">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         android:layout_below="@+id/getBloodImageView"
+         android:padding="20dp">
+
+
+         <ImageView
+             android:layout_width="250dp"
+             android:layout_height="250dp"
+             android:id="@+id/bloodImageView"
+             android:src="@drawable/blooddonation"
+             android:layout_gravity="center"/>
+
+         <com.facebook.login.widget.LoginButton
+             android:id="@+id/fbLoginButton"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:layout_below="@+id/bloodImageView"
+             />
+
+     </LinearLayout>
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/getblood"
+            android:id="@+id/getBloodImageView"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

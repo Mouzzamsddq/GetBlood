@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+     <item android:title="Call"
+         android:id="@+id/callChat"
+         app:showAsAction="always"
+         android:icon="@drawable/ic_phone_white_icon"/>
+
+      <item android:title="View Profile"
+          android:id="@+id/chat_profile"
+          android:orderInCategory="1">
+
+      </item>
+    <item android:title="Search"
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_black_24dp"
+        app:showAsAction="always"
+        app:actionViewClass="android.widget.SearchView"
+        android:orderInCategory="2">
+
+    </item>
+
+    <item android:title="Change background"
+        android:id="@+id/changeBackground"
+        android:orderInCategory="3">
+
+    </item>
+
+    <item  android:title="More"
+        android:id="@+id/chat_more"
+        android:orderInCategory="3">
+        <menu>
+           <item android:title="Clear Chat"
+               android:id="@+id/chat_clearChat"
+               android:orderInCategory="1">
+
+           </item>
+            <item android:title="Block"
+                android:id="@+id/chat_block"
+                android:orderInCategory="2">
+
+            </item>
+        </menu>
+    </item>
+</menu>

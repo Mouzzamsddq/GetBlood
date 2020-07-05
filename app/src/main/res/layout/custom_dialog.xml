@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Do you want to stop creating your account?"
+        android:textColor="@color/colorBlack"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:text="If you stop now, you'll loose any progress you've made"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/continueCreatingAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Continue Creating Account"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="viewEnd"/>
+    <TextView
+        android:id="@+id/stopCreatingAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stop Creating Account"
+        android:textColor="@color/colorBlood"
+        android:textAlignment="viewEnd"
+        android:textSize="18sp"
+        android:paddingTop="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

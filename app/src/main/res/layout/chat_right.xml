@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/messageLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:visibility="gone"
+            android:id="@+id/profileImageView"
+            app:civ_border_color="@null"
+            android:src="@drawable/ic_face_black_24dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timeTextView"
+            android:textColor='@color/colorBlack'
+            android:text="02/03/2019 05:59 PM"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/messageTextView"
+            android:textSize="16sp"
+            android:background="@drawable/bg_sender"
+            android:textColor="@color/colorBlack"
+            android:padding="15dp"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/timeTextView"
+            android:text="His Message"
+            android:layout_toRightOf="@+id/timeTextView"
+            android:layout_alignParentRight="true" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeImage"
+            android:layout_alignParentEnd="true">
+
+
+
+
+
+
+
+
+
+
+
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/ic_image_chat"
+                android:background="@drawable/bg_sender"
+                android:id="@+id/messageIv"
+                android:adjustViewBounds="true"/>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/pdfRelativeLayout"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pdf"
+                android:padding="10dp"
+                android:background="@drawable/bg_sender"
+                android:id="@+id/pdfImageView"
+                android:layout_alignParentEnd="true"/>
+            <TextView
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:padding="15dp"
+
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlood"
+                android:id="@+id/pdfNameTextView"
+                android:drawableRight="@drawable/ic_pdf_red_icon"
+                android:layout_alignStart="@+id/pdfImageView"
+                android:layout_below="@id/pdfImageView"
+                android:text="Pdf file name"/>
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/isSeenTextView"
+        android:gravity="end"
+        android:textAlignment="textEnd"
+        android:text="delivered"/>
+
+
+</LinearLayout>

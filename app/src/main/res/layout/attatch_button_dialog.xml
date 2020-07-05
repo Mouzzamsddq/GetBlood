@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select the file type"
+        android:id="@+id/selectTextView"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/imageLayout"
+        android:layout_below="@+id/selectTextView">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Image Files"
+            android:id="@+id/selectImageTextView"
+            android:textColor="@color/colorBlood"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_pic_red_icon"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/imageLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pdf files"
+            android:id="@+id/selectPdfTextView"
+            android:textColor="@color/colorBlood"
+            android:textSize="16sp"
+            android:padding="10dp"
+            android:drawableRight="@drawable/ic_pdf_red_icon"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

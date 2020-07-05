@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/donorRl"
+    android:background="@drawable/donor">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custombutton"
+            android:textColor="@color/colorBlood"
+            android:text="Donor"
+            android:paddingTop="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="10dp"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/donorButton"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custombutton"
+            android:textColor="@color/colorBlood"
+            android:text="Recipient"
+            android:layout_marginTop="20dp"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            android:textSize="24sp"
+            android:textAllCaps="false"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/recipientButton"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:padding="10dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/getblood"/>
+
+
+</RelativeLayout>

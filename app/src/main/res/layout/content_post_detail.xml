@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="5dp"
+    app:cardBackgroundColor="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/profileLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:layout_width="50dp"
+                android:src="@drawable/baseline_account_circle_black_48"
+                android:id="@+id/uProfilePicture"
+                android:scaleType="centerCrop"
+                android:layout_height="50dp"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/uNameTextView"
+                    android:text="name"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorBlack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/pTimeTextView"
+                    android:text="33 min"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_post_red_icon"
+                android:id="@+id/moreButton"
+                android:background="@null"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:autoLink="all"
+            android:textColor="@color/colorBlood"
+            android:text="title"
+            android:id="@+id/postTitleTextView"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textStyle="bold"
+            android:autoLink="all"
+            android:text="the description of the post"
+            android:id="@+id/postDescriptionTextView"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorBlood"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="User Type:"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorWhite"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="user Type"
+                    android:textSize="16sp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/pUserTypeTextView"
+                    android:background="@color/block_background_color"
+                    android:textColorHint="@color/colorBlood"
+                    android:textColor="@color/colorBlood"
+                    android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Post Type:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/block_background_color"
+                    android:textColor="@color/colorBlood"
+                    android:layout_marginLeft="8dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/pTypeTextView"
+                    android:textColorHint="@color/colorBlood"
+                    android:hint="Post Type"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Blood Request:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="Blood group"
+                    android:textSize="16sp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/postBloodTextView"
+                    android:textColor="@color/colorBlood"
+                    android:background="@color/block_background_color"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Contact:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="16sp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/pContactTextView"
+                    android:textColor="@color/colorBlood"
+                    android:background="@color/block_background_color"
+                    android:text="Contact"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="16sp"
+                    android:id="@+id/pLocationTextView"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBlood"
+                    android:background="@color/block_background_color"
+                    android:text="Location"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Posted at:"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="16sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:textSize="16dp"
+                    android:paddingLeft="5dp"
+                    android:id="@+id/publishedTimeTextView"
+                    android:textColor="@color/colorBlood"
+                    android:background="@color/block_background_color"
+                    android:text="Date/time"/>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/interestedTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1.2K interested"
+            android:textColor="@color/colorBlood"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+            <Button
+                android:id="@+id/interestedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorWhite"
+                android:drawableLeft="@drawable/ic_thum_red_icon"
+                android:textColor="@color/colorBlood"
+                android:text="Interest"/>
+            <Button
+                android:id="@+id/messageButton"
+                android:layout_width="wrap_content"
+                android:textColor="@color/colorBlood"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_message_red_icon"
+                android:background="@color/colorWhite"
+                android:text="message"/>
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_share_red_icon"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorBlood"
+                android:text="share"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

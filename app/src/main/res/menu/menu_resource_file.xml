@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:icon="@drawable/ic_profile_overview"/>
+        <item
+            android:id="@+id/nav_users"
+            android:title="Users"
+            android:icon="@drawable/usersshow"/>
+        <item
+            android:id="@+id/nav_chats"
+            android:title="Chats"
+            android:icon="@drawable/ic_chat_black_24dp"/>
+        <item
+            android:id="@+id/nav_nearest_hospital"
+            android:title="Find nearest Hospitals"
+            android:icon="@drawable/ic_find_hospital"/>
+        <item
+            android:id="@+id/nav_setting"
+            android:title="Settings"
+            android:icon="@drawable/ic_setting_black_icon"/>
+        <item android:title="Communicate">
+            <menu>
+                <group android:checkableBehavior="single">
+
+
+
+                <item
+                    android:id="@+id/nav_help"
+                    android:icon="@drawable/ic_help"
+                    android:title="Help"/>
+
+                <item
+                    android:id="@+id/nav_info"
+                    android:icon="@drawable/ic_info_black_icon"
+                    android:title="Information"/>
+                </group>
+
+            </menu>
+        </item>
+        <item
+            android:id="@+id/nav_logout"
+            android:title="logout"
+            android:icon="@drawable/ic_logout"/>
+    </group>
+
+
+</menu>

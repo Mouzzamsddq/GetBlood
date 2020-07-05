@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profileLayout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.profileFragment">
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/profileRefreshLayout">
+    <ScrollView
+        android:id="@+id/scrollViewProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/layoutProfile"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:layout_gravity="center"
+            android:background="@drawable/donor"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="5dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/profileImageView"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:src="@drawable/baseline_account_circle_black_48" />
+
+                <ImageView
+                    android:id="@+id/imagePlusProfile"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginEnd="176dp"
+                    android:layout_marginRight="176dp"
+                    android:layout_marginBottom="18dp"
+                    android:src="@drawable/ic_plus" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="9dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginTop="-2dp"
+                    android:layout_marginEnd="51dp"
+                    android:layout_marginRight="51dp"
+                    android:layout_marginBottom="52dp"
+                    android:layout_toEndOf="@+id/profileImageView"
+                    android:layout_toRightOf="@+id/profileImageView"
+                    android:src="@drawable/reviewlogo" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/profileUserNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="userName"
+                android:background="@drawable/custombutton"
+                android:layout_marginRight="12dp"
+                android:textAlignment="center"
+                android:padding="5dp"
+                android:textColor="@color/colorBlood"
+                android:layout_gravity="center"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/profileUserEmailTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:background="@drawable/custombutton"
+                android:layout_marginRight="12dp"
+                android:text="UserEmail"
+                android:textColor="@color/colorBlood"
+                android:textAlignment="center"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/uploadLayout"
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/uploadProfileButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/custombutton"
+                    android:padding="5dp"
+                    android:drawableRight="@drawable/ic_upload_red_icon"
+                    android:text="Upload profile   "
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlood" />
+
+                <Button
+                    android:id="@+id/profileCancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/custombutton"
+                    android:drawableRight="@drawable/ic_cancel_red_icon"
+                    android:padding="5dp"
+                    android:text="Cancel   "
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlood" />
+
+            </LinearLayout>
+            
+    </LinearLayout>
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fragmentProfileRecyclerView"/>
+    </LinearLayout>
+        
+        
+    
+</ScrollView>
+
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_edit_white_icon"
+        android:background="@color/colorBlood"
+        android:backgroundTint="@color/colorBlood"
+        android:id="@+id/fabProfileButton"/>
+
+
+
+
+
+
+</RelativeLayout>
