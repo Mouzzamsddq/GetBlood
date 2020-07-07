@@ -931,6 +931,7 @@ public class ChatActivity extends AppCompatActivity {
                        @Override
                        public void onClick(DialogInterface dialogInterface, int i) {
                            finish();
+                           deleteChatListNode();
                            overridePendingTransition(0, 0);
                            Intent intent = new Intent(getApplicationContext(),ChatActivity.class);
                            intent.putExtra("hisUID",hisUID);
@@ -946,7 +947,7 @@ public class ChatActivity extends AppCompatActivity {
         });
 
 
-        deleteChatListNode();
+
 
 
 
@@ -2489,37 +2490,7 @@ public class ChatActivity extends AppCompatActivity {
       Intent intent = getIntent();
       String hisUID = intent.getStringExtra("hisUID");
       DatabaseReference ref = FirebaseDatabase.getInstance().getReference().child("ChatList");
-      ref.addListenerForSingleValueEvent(new ValueEventListener() {
-          @Override
-          public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-              for(DataSnapshot ds1 : dataSnapshot.getChildren())
-              {
-                  if(ds1.exists())
-                  {
-                      if(myUID.equals(ds1.getKey())) {
-
-                         for(DataSnapshot ds2 : ds1.getChildren())
-                         {
-                             if(ds2.exists())
-                             {
-                                 if(hisUID.equals(ds2.getKey()))
-                                 {
-                                     ds2.getRef().removeValue();
-
-                                 }
-                             }
-                         }
-                      }
-                  }
-
-              }
-          }
-
-          @Override
-          public void onCancelled(@NonNull DatabaseError databaseError) {
-
-          }
-      });
+      ref.child(myUID).child(hisUID).setValue(null);
   }
 
 

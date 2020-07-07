@@ -204,13 +204,16 @@ public class DateOfBirth extends AppCompatActivity {
     }
     public boolean validateDate()
     {
+        String dateInput=dateEditText.getText().toString().trim();
         if(!date.isEmpty()) {
-            String[] dateArr = date.split("/");
-            userAge = cyear - Integer.parseInt(dateArr[2]);
-            Log.i("UserAge", String.valueOf(userAge));
+            if(Date_Pattern.matcher(dateInput).matches()) {
+                String[] dateArr = date.split("/");
+                userAge = cyear - Integer.parseInt(dateArr[2]);
+                Log.i("UserAge", String.valueOf(userAge));
+            }
         }
 
-        String dateInput=dateEditText.getText().toString().trim();
+
         if(dateInput.isEmpty())
         {
             dateEditText.setError("Field can't be empty");

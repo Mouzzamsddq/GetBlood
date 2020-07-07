@@ -171,7 +171,9 @@ public class ContiueFacebook extends AppCompatActivity {
                     });
                 }else{
                     Log.d(TAG,"sign in with credential : failure",task.getException());
-                    Toast.makeText(ContiueFacebook.this, "Authentication Failed", Toast.LENGTH_SHORT).show();
+                    progressDialog.dismiss();
+                    LoginManager.getInstance().logOut();
+                    Toast.makeText(ContiueFacebook.this,"Email already exists", Toast.LENGTH_SHORT).show();
                     updateUI(null);
                 }
             }
