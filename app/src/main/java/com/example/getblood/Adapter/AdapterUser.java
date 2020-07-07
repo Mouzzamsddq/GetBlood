@@ -286,14 +286,35 @@ public class AdapterUser extends  RecyclerView.Adapter<AdapterUser.MyHolder> {
         //set data
         holder.nameTextView.setText(name);
         holder.userTypeTextView.setText(userType);
-        holder.bloodTextView.setText(blood);
-        String s = "XXXXXXX";
-        char[] phoneArr = contact.toCharArray();
-        for (int i = phoneArr.length - 3; i < phoneArr.length; i++) {
-            s = s + phoneArr[i];
+        if(blood != null && !blood.equals("")) {
+            holder.bloodTextView.setText(blood);
         }
-        holder.contactTextView.setText(s);
-        holder.locationTextView.setText(location);
+        else
+        {
+            holder.bloodTextView.setText("Not given");
+        }
+        String s = "XXXXXXX";
+
+        if(contact != null && !contact.equals(""))
+        {
+            char[] phoneArr = contact.toCharArray();
+            for (int i = phoneArr.length - 3; i < phoneArr.length; i++) {
+                s = s + phoneArr[i];
+            }
+            holder.contactTextView.setText(s);
+        }
+        else
+        {
+            holder.contactTextView.setText("Not given");
+        }
+        if(userList.get(position).getCity() != null && userList.get(position).getState() != null) {
+            holder.locationTextView.setText(location);
+
+        }
+        else
+        {
+            holder.locationTextView.setText("Not given");
+        }
         checkBlockedUsers(hisUID,holder,name);
         if(holder.contactTextView.getText().toString().equals("Blocked,Press to unblock"))
         {
