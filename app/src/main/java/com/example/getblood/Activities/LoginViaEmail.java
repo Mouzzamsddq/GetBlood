@@ -38,16 +38,16 @@ public class LoginViaEmail extends AppCompatActivity {
     ProgressDialog pd;
     RelativeLayout rl;
     public static final String EXTRA_FOUND="boolean";
-    private static final Pattern PASSWORD_PATTERN =
-            Pattern.compile("^" +
-                    "(?=.*[0-9])" +         //at least 1 digit
-                    "(?=.*[a-z])" +         //at least 1 lower case letter
-                    "(?=.*[A-Z])" +         //at least 1 upper case letter
-                    //"(?=.*[a-zA-Z])" +      //any letter
-                    "(?=.*[@#$%^&+=])" +    //at least 1 special character
-                    "(?=\\S+$)" +           //no white spaces
-                    ".{6,}" +               //at least 4 characters
-                    "$");
+//    private static final Pattern PASSWORD_PATTERN =
+//            Pattern.compile("^" +
+//                    "(?=.*[0-9])" +         //at least 1 digit
+//                    "(?=.*[a-z])" +         //at least 1 lower case letter
+//                    "(?=.*[A-Z])" +         //at least 1 upper case letter
+//                    //"(?=.*[a-zA-Z])" +      //any letter
+//                    "(?=.*[@#$%^&+=])" +    //at least 1 special character
+//                    "(?=\\S+$)" +           //no white spaces
+//                    ".{6,}" +               //at least 4 characters
+//                    "$");
 
     TextInputEditText textInputEmail;
     TextInputEditText textInputPassword;
@@ -160,10 +160,6 @@ public class LoginViaEmail extends AppCompatActivity {
         if(passwordInput.isEmpty())
         {
             textInputPassword.setError("Field can't be empty");
-            return false;
-        }else if(!PASSWORD_PATTERN.matcher(passwordInput).matches())
-        {
-            textInputPassword.setError("Password is too weak");
             return false;
         }
         else
